@@ -1,0 +1,73 @@
+.AnimationContainer {
+    margin-top: 60px;
+    margin-left: 85px;
+    margin-right: 85px;
+    padding-bottom: 60px;
+    position: relative;
+    width: calc(100vw - 170px); /* 100vw - left and right margins */
+    height: 700px;
+    background-color: transparent;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 20px rgba(255, 255, 255, 0.6);
+  }
+  
+  /* All point divs */
+  .point {
+    position: absolute;
+    width: 300px;   /* Increased from 60px → 180px */
+    height: 300px;  /* Increased from 60px → 180px */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+  }
+  
+  /* Triangle point positions */
+  #top-left {
+    top: 10%;
+    left: 15%;
+  }
+  
+  #top-right {
+    top: 10%;
+    left: 75%; /* changed from right to left for consistent absolute animation */
+  }
+  
+  #bottom {
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Coin that animates */
+  #coin {
+    position: absolute;
+    width: 150px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: coinPath 4s linear infinite;
+  }
+  
+  /* Keyframes: top-right → bottom → top-left → top-right */
+  @keyframes coinPath {
+    0% {
+      top: 10%;
+      left: 75%;
+    }
+    33% {
+      top: 65%;
+      left: 50%;
+    }
+    66% {
+      top: 10%;
+      left: 15%;
+    }
+    100% {
+      top: 10%;
+      left: 75%;
+    }
+  }
