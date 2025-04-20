@@ -95,7 +95,8 @@ const KeyFeature = () => {
         </ItemImage>
         <ItemText>
           <h3>Electro Coin</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Electro Coin is a decentralized cryptocurrency designed for secure and transparent electricity transfers. It enables peer-to-peer energy trading using blockchain technology.
+          </p>
         </ItemText>
       </Item>
       
@@ -105,7 +106,7 @@ const KeyFeature = () => {
         </ItemImage>
         <ItemText>
           <h3>Smart Meter</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Smart Meters are advanced digital devices that automatically measure and record electricity usage in real-time. They enable transparent billing, energy efficiency, and seamless integration with decentralized energy systems.</p>
         </ItemText>
       </Item>
     </Container>
